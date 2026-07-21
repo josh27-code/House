@@ -291,7 +291,7 @@
           <div class="countdown-label">DAYS TO GO</div>
           <div class="progress-section">
             <div class="progress-labels">
-              <span id="progressText">0 of 0 done</span>
+              <span id="progressText">0 of 0 done </span>
               <span id="progressPercent"> 0%</span>
             </div>
             <div class="progress-bar-bg">
@@ -517,7 +517,7 @@
       const pct = allItems ? Math.round((doneItems / allItems) * 100) : 0;
 
       document.getElementById('progressText').textContent = `${doneItems} of ${allItems} done`;
-      document.getElementById('progressPercent').textContent = ` ${pct}%`;
+      document.getElementById('progressPercent').textContent = ` (${pct}%)`;
       document.getElementById('progressBar').style.width = `${pct}%`;
     }
 
