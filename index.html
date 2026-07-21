@@ -1,622 +1,620 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>25 Connaught Gardens — Completion Checklist</title>
-<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-<style>
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>25 Connaught Gardens — Completion Checklist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-body {
-background-color: #101a2e;
-color: #EFEAE0;
-font-family: 'IBM Plex Sans', sans-serif;
-line-height: 1.6;
-}
+    body {
+      background-color: #101a2e;
+      color: #EFEAE0;
+      font-family: 'IBM Plex Sans', sans-serif;
+      line-height: 1.6;
+    }
 
-.header {
-border-bottom: 1px solid #2c3a56;
-padding: 2rem;
-}
+    .header {
+      border-bottom: 1px solid #2c3a56;
+      padding: 2rem;
+    }
 
-.header-content {
-max-width: 48rem;
-margin: 0 auto;
-}
+    .header-content {
+      max-width: 48rem;
+      margin: 0 auto;
+    }
 
-.header-inner {
-display: flex;
-justify-content: space-between;
-align-items: flex-start;
-gap: 1.5rem;
-flex-wrap: wrap;
-}
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
 
-.header-left h1 {
-font-family: 'Zilla Slab', serif;
-font-size: 2rem;
-font-weight: 700;
-line-height: 1.2;
-margin-top: 0.5rem;
-}
+    .header-left h1 {
+      font-family: 'Zilla Slab', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-top: 0.5rem;
+    }
 
-.tag {
-font-family: 'IBM Plex Mono', monospace;
-font-size: 0.7rem;
-letter-spacing: 0.15em;
-color: #C9A66B;
-margin-bottom: 0.5rem;
-}
+    .tag {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      color: #C9A66B;
+      margin-bottom: 0.5rem;
+    }
 
-.subtitle {
-font-family: 'IBM Plex Sans', sans-serif;
-font-size: 0.875rem;
-color: #9AA6BF;
-margin-top: 0.25rem;
-}
+    .subtitle {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 0.875rem;
+      color: #9AA6BF;
+      margin-top: 0.25rem;
+    }
 
-.countdown {
-text-align: right;
-}
+    .countdown {
+      text-align: right;
+    }
 
-.countdown-num {
-font-family: 'IBM Plex Mono', monospace;
-font-size: 3.5rem;
-font-weight: 600;
-color: #C9A66B;
-line-height: 1;
-}
+    .countdown-num {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 3.5rem;
+      font-weight: 600;
+      color: #C9A66B;
+      line-height: 1;
+    }
 
-.countdown-label {
-font-family: 'IBM Plex Mono', monospace;
-font-size: 0.7rem;
-letter-spacing: 0.15em;
-color: #9AA6BF;
-margin-top: 0.5rem;
-}
+    .countdown-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      color: #9AA6BF;
+      margin-top: 0.5rem;
+    }
 
-.progress-section {
-margin-top: 1.5rem;
-}
+    .progress-section {
+      margin-top: 1.5rem;
+    }
 
-.progress-labels {
-display: flex;
-justify-content: space-between;
-font-family: 'IBM Plex Mono', monospace;
-font-size: 0.75rem;
-color: #9AA6BF;
-margin-bottom: 0.75rem;
-}
+    .progress-labels {
+      display: flex;
+      justify-content: space-between;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.75rem;
+      color: #9AA6BF;
+      margin-bottom: 0.75rem;
+    }
 
-.progress-bar-bg {
-height: 0.5rem;
-width: 100%;
-background-color: #1c2942;
-overflow: hidden;
-}
+    .progress-bar-bg {
+      height: 0.5rem;
+      width: 100%;
+      background-color: #1c2942;
+      overflow: hidden;
+    }
 
-.progress-bar-fill {
-height: 100%;
-background-color: #7C9473;
-transition: width 0.5s ease;
-}
+    .progress-bar-fill {
+      height: 100%;
+      background-color: #7C9473;
+      transition: width 0.5s ease;
+    }
 
-.main {
-max-width: 48rem;
-margin: 0 auto;
-padding: 2rem;
-}
+    .main {
+      max-width: 48rem;
+      margin: 0 auto;
+      padding: 2rem;
+    }
 
-.section {
-margin-bottom: 2rem;
-}
+    .section {
+      margin-bottom: 2rem;
+    }
 
-.section-header {
-display: flex;
-align-items: center;
-gap: 0.75rem;
-margin-bottom: 0.75rem;
-}
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
 
-.section-icon {
-width: 2.25rem;
-height: 2.25rem;
-border: 1px solid #C9A66B;
-display: flex;
-align-items: center;
-justify-content: center;
-background-color: #141f38;
-flex-shrink: 0;
-}
+    .section-icon {
+      width: 2.25rem;
+      height: 2.25rem;
+      border: 1px solid #C9A66B;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #141f38;
+      flex-shrink: 0;
+    }
 
-.section-icon svg {
-width: 1rem;
-height: 1rem;
-stroke: #C9A66B;
-stroke-width: 1.75;
-fill: none;
-}
+    .section-icon svg {
+      width: 1rem;
+      height: 1rem;
+      stroke: #C9A66B;
+      stroke-width: 1.75;
+      fill: none;
+    }
 
-.section-title-row {
-display: flex;
-align-items: baseline;
-gap: 0.75rem;
-flex-wrap: wrap;
-flex: 1;
-min-width: 0;
-}
+    .section-title-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      flex: 1;
+      min-width: 0;
+    }
 
-.section-title {
-font-family: 'Zilla Slab', serif;
-font-weight: 700;
-font-size: 1.125rem;
-color: #EFEAE0;
-}
+    .section-title {
+      font-family: 'Zilla Slab', serif;
+      font-weight: 700;
+      font-size: 1.125rem;
+      color: #EFEAE0;
+    }
 
-.section-tag {
-font-family: 'IBM Plex Mono', monospace;
-font-size: 0.625rem;
-letter-spacing: 0.15em;
-color: #6d7a99;
-border: 1px solid #2c3a56;
-padding: 0.25rem 0.5rem;
-transform: rotate(-1deg);
-display: inline-block;
-}
+    .section-tag {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.625rem;
+      letter-spacing: 0.15em;
+      color: #6d7a99;
+      border: 1px solid #2c3a56;
+      padding: 0.25rem 0.5rem;
+      transform: rotate(-1deg);
+      display: inline-block;
+    }
 
-.section-count {
-font-family: 'IBM Plex Mono', monospace;
-font-size: 0.75rem;
-color: #6d7a99;
-margin-left: auto;
-}
+    .section-count {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.75rem;
+      color: #6d7a99;
+      margin-left: auto;
+    }
 
-.section-items {
-border-left: 1px solid #2c3a56;
-margin-left: 1.125rem;
-padding-left: 1.625rem;
-}
+    .section-items {
+      border-left: 1px solid #2c3a56;
+      margin-left: 1.125rem;
+      padding-left: 1.625rem;
+    }
 
-.item {
-display: flex;
-align-items: flex-start;
-gap: 0.75rem;
-padding: 0.625rem 0;
-cursor: pointer;
-}
+    .item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.625rem 0;
+      cursor: pointer;
+    }
 
-.item-checkbox {
-width: 1.25rem;
-height: 1.25rem;
-border: 1px solid #4a577a;
-display: flex;
-align-items: center;
-justify-content: center;
-margin-top: 0.125rem;
-flex-shrink: 0;
-transition: all 0.2s ease;
-}
+    .item-checkbox {
+      width: 1.25rem;
+      height: 1.25rem;
+      border: 1px solid #4a577a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.125rem;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+    }
 
-.item:hover .item-checkbox {
-border-color: #C9A66B;
-}
+    .item:hover .item-checkbox {
+      border-color: #C9A66B;
+    }
 
-.item-checkbox.checked {
-background-color: #7C9473;
-border-color: #7C9473;
-}
+    .item-checkbox.checked {
+      background-color: #7C9473;
+      border-color: #7C9473;
+    }
 
-.item-checkbox.checked::after {
-content: '✓';
-color: #101a2e;
-font-size: 0.8rem;
-font-weight: bold;
-}
+    .item-checkbox.checked::after {
+      content: '✓';
+      color: #101a2e;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
 
-.item-text {
-font-family: 'IBM Plex Sans', sans-serif;
-font-size: 0.9375rem;
-line-height: 1.4;
-color: #EFEAE0;
-transition: all 0.2s ease;
-}
+    .item-text {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 0.9375rem;
+      line-height: 1.4;
+      color: #EFEAE0;
+      transition: all 0.2s ease;
+    }
 
-.item.checked .item-text {
-color: #6d7a99;
-text-decoration: line-through;
-text-decoration-color: #4a577a;
-}
+    .item.checked .item-text {
+      color: #6d7a99;
+      text-decoration: line-through;
+      text-decoration-color: #4a577a;
+    }
 
-.footer {
-text-align: center;
-padding: 1rem 2rem;
-font-family: 'IBM Plex Mono', monospace;
-font-size: 0.7rem;
-letter-spacing: 0.15em;
-color: #4a577a;
-}
+    .footer {
+      text-align: center;
+      padding: 1rem 2rem;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      color: #4a577a;
+    }
 
-.status {
-text-align: center;
-padding: 0.5rem 2rem;
-font-family: 'IBM Plex Mono', monospace;
-font-size: 0.65rem;
-color: #6d7a99;
-min-height: 1.2rem;
-}
+    .status {
+      text-align: center;
+      padding: 0.5rem 2rem;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.65rem;
+      color: #6d7a99;
+      min-height: 1.2rem;
+    }
 
-.status.error {
-color: #d97706;
-}
+    .status.error {
+      color: #d97706;
+    }
 
-.status.success {
-color: #7C9473;
-}
+    .status.success {
+      color: #7C9473;
+    }
 
-@media (max-width: 768px) {
-.header {
-padding: 1.5rem;
-}
+    @media (max-width: 768px) {
+      .header {
+        padding: 1.5rem;
+      }
 
-.header-left h1 {
-font-size: 1.5rem;
-}
+      .header-left h1 {
+        font-size: 1.5rem;
+      }
 
-.countdown-num {
-font-size: 2.5rem;
-}
+      .countdown-num {
+        font-size: 2.5rem;
+      }
 
-.main {
-padding: 1.5rem;
-}
-}
-</style>
+      .main {
+        padding: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="header">
-<div class="header-content">
-<div class="header-inner">
-<div class="header-left">
-<div class="tag">COMPLETION MANIFEST</div>
-<h1>25 Connaught Gardens</h1>
-<div class="subtitle">Pre-completion checklist</div>
-</div>
-<div class="countdown">
-<div class="countdown-num" id="daysLeft">6</div>
-<div class="countdown-label">DAYS TO GO</div>
-<div class="progress-section">
-<div class="progress-labels">
-              <span id="progressText">0 of 0 done (0%)</span>
-</div>
-<div class="progress-bar-bg">
-<div class="progress-bar-fill" id="progressBar" style="width: 0%"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+  <div class="header">
+    <div class="header-content">
+      <div class="header-inner">
+        <div class="header-left">
+          <div class="tag">COMPLETION MANIFEST</div>
+          <h1>25 Connaught Gardens</h1>
+          <div class="subtitle">Pre-completion checklist</div>
+        </div>
+        <div class="countdown">
+          <div class="countdown-num" id="daysLeft">6</div>
+          <div class="countdown-label">DAYS TO GO</div>
+          <div class="progress-section">
+            <div class="progress-labels">
+              <span id="progressPercent">0 out of 0 done (0%)</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" id="progressBar" style="width: 0%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div class="status" id="status"></div>
+  <div class="status" id="status"></div>
 
-<div class="main" id="sectionsContainer"></div>
+  <div class="main" id="sectionsContainer"></div>
 
-<div class="footer">SYNCING WITH FIREBASE</div>
+  <div class="footer">SYNCING WITH FIREBASE</div>
 
-<script type="module">
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
-import { getDatabase, ref, onValue, set } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+    import { getDatabase, ref, onValue, set } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
 
-// Firebase config
-const firebaseConfig = {
-apiKey: "AIzaSyCeA_vGys9NnEARsFj2r7nLtOVTQXEGkZ8",
-authDomain: "house-moving-checklist.firebaseapp.com",
-projectId: "house-moving-checklist",
-storageBucket: "house-moving-checklist.firebasestorage.app",
-messagingSenderId: "917490366020",
-appId: "1:917490366020:web:21c6e9074a44d55dc8ae11",
-databaseURL: "https://house-moving-checklist-default-rtdb.firebaseio.com"
-};
+    // Firebase config
+    const firebaseConfig = {
+      apiKey: "AIzaSyCeA_vGys9NnEARsFj2r7nLtOVTQXEGkZ8",
+      authDomain: "house-moving-checklist.firebaseapp.com",
+      projectId: "house-moving-checklist",
+      storageBucket: "house-moving-checklist.firebasestorage.app",
+      messagingSenderId: "917490366020",
+      appId: "1:917490366020:web:21c6e9074a44d55dc8ae11",
+      databaseURL: "https://house-moving-checklist-default-rtdb.firebaseio.com"
+    };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const db = getDatabase(app);
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
 
-const COMPLETION_DATE = new Date('2026-07-27T00:00:00+01:00');
-let checked = {};
-let isInitialized = false;
+    const COMPLETION_DATE = new Date('2026-07-27T00:00:00+01:00');
+    let checked = {};
+    let isInitialized = false;
 
-const SECTIONS = [
-{
-id: 'finance',
-label: 'Finance',
-icon: 'scale',
-tag: 'MONEY',
-items: [
-'Confirm mortgage offer is still valid and covers the completion date',
-'Confirm LISA withdrawal funds have landed with UKC Legal',
-'Send remaining deposit/balance funds to UKC Legal in good time — aim for cleared funds by 23 July',
-"Check your bank's daily transfer limit — arrange a higher limit or CHAPS payment if needed",
-'Review and approve the completion statement from UKC Legal — check ground rent (£225 p.a.) and service charge (£2,200 p.a.) figures',
-'Ask UKC Legal to confirm buildings insurance arrangements (often via freeholder/managing agent through service charge)',
-'Arrange contents insurance to start from completion day',
-],
-},
-{
-id: 'leasehold',
-label: 'Leasehold admin',
-icon: 'file',
-tag: 'LEASE',
-items: [
-'Ask UKC Legal whether a Notice of Transfer and Notice of Charge need serving on the freeholder/managing agent post-completion',
-"Get the managing agent's contact details for future service charge/ground rent payments",
-'Note the next ground rent review date — 31 March 2027',
-],
-},
-{
-id: 'removals',
-label: 'Removals (DIY van)',
-icon: 'truck',
-tag: 'MOVE',
-items: [
-'Book the van hire for 27 July (or the evening before if collecting early)',
-'Check driving licence covers the van category — get a DVLA check code if needed',
-'Book time off work / block your calendar for moving day',
-'Round up boxes, packing materials, furniture blankets',
-'Check if a parking suspension/permit is needed at either property',
-'Arrange help from friends or family for the day',
-],
-},
-{
-id: 'rental',
-label: 'Current rental',
-icon: 'home',
-tag: 'OUT',
-items: [
-'Give formal written notice to your landlord/agent',
-'Book the check-out inspection',
-'Photograph the property for deposit protection purposes',
-'Confirm deposit return process and timeline with the scheme (DPS/TDS/mydeposits)',
-'Take final meter readings and photograph them',
-'Contact rental property utility suppliers to close accounts from moving-out date',
-'Cancel/transfer broadband — check contract end date and notice period',
-'Return keys to landlord/agent',
-],
-},
-{
-id: 'setup',
-label: 'New property set-up',
-icon: 'boxes',
-tag: 'IN',
-items: [
-'Contact gas, electric and water suppliers to register as new occupier from completion date',
-'Set up council tax with the local council for completion date',
-'Arrange broadband installation — book early, some take 2+ weeks',
-"Check if there's a TV licence to transfer",
-],
-},
-{
-id: 'address',
-label: 'Address updates',
-icon: 'key',
-tag: 'NOTIFY',
-items: [
-'Royal Mail redirection',
-'Bank(s) and credit cards',
-'Employer (Resident Architects) / payroll',
-'DVLA — driving licence and V5C if you have a car',
-'GP, dentist, optician',
-'Electoral roll',
-'Subscriptions, insurers, pension providers',
-],
-},
-{
-id: 'completionday',
-label: 'On completion day',
-icon: 'clipboard',
-tag: 'DAY',
-items: [
-"Wait for UKC Legal to confirm funds received by the seller's solicitor — this is legal completion",
-'Arrange key collection time/location with the estate agent',
-'Take meter readings the moment you get in — photograph them',
-'Check the property matches the agreed fixtures/fittings list before unloading',
-'Change the locks if you want extra peace of mind',
-],
-},
-{
-id: 'after',
-label: 'Just after completion',
-icon: 'check',
-tag: 'AFTER',
-items: [
-'Send new meter readings to suppliers once accounts are set up',
-'Set up a standing order/reminder for ground rent and service charge payments',
-'File the completion statement, TR1 and mortgage deed somewhere safe',
-'Update your will/life insurance beneficiary details if relevant',
-],
-},
-];
+    const SECTIONS = [
+      {
+        id: 'finance',
+        label: 'Finance',
+        icon: 'scale',
+        tag: 'MONEY',
+        items: [
+          'Confirm mortgage offer is still valid and covers the completion date',
+          'Confirm LISA withdrawal funds have landed with UKC Legal',
+          'Send remaining deposit/balance funds to UKC Legal in good time — aim for cleared funds by 23 July',
+          "Check your bank's daily transfer limit — arrange a higher limit or CHAPS payment if needed",
+          'Review and approve the completion statement from UKC Legal — check ground rent (£225 p.a.) and service charge (£2,200 p.a.) figures',
+          'Ask UKC Legal to confirm buildings insurance arrangements (often via freeholder/managing agent through service charge)',
+          'Arrange contents insurance to start from completion day',
+        ],
+      },
+      {
+        id: 'leasehold',
+        label: 'Leasehold admin',
+        icon: 'file',
+        tag: 'LEASE',
+        items: [
+          'Ask UKC Legal whether a Notice of Transfer and Notice of Charge need serving on the freeholder/managing agent post-completion',
+          "Get the managing agent's contact details for future service charge/ground rent payments",
+          'Note the next ground rent review date — 31 March 2027',
+        ],
+      },
+      {
+        id: 'removals',
+        label: 'Removals (DIY van)',
+        icon: 'truck',
+        tag: 'MOVE',
+        items: [
+          'Book the van hire for 27 July (or the evening before if collecting early)',
+          'Check driving licence covers the van category — get a DVLA check code if needed',
+          'Book time off work / block your calendar for moving day',
+          'Round up boxes, packing materials, furniture blankets',
+          'Check if a parking suspension/permit is needed at either property',
+          'Arrange help from friends or family for the day',
+        ],
+      },
+      {
+        id: 'rental',
+        label: 'Current rental',
+        icon: 'home',
+        tag: 'OUT',
+        items: [
+          'Give formal written notice to your landlord/agent',
+          'Book the check-out inspection',
+          'Photograph the property for deposit protection purposes',
+          'Confirm deposit return process and timeline with the scheme (DPS/TDS/mydeposits)',
+          'Take final meter readings and photograph them',
+          'Contact rental property utility suppliers to close accounts from moving-out date',
+          'Cancel/transfer broadband — check contract end date and notice period',
+          'Return keys to landlord/agent',
+        ],
+      },
+      {
+        id: 'setup',
+        label: 'New property set-up',
+        icon: 'boxes',
+        tag: 'IN',
+        items: [
+          'Contact gas, electric and water suppliers to register as new occupier from completion date',
+          'Set up council tax with the local council for completion date',
+          'Arrange broadband installation — book early, some take 2+ weeks',
+          "Check if there's a TV licence to transfer",
+        ],
+      },
+      {
+        id: 'address',
+        label: 'Address updates',
+        icon: 'key',
+        tag: 'NOTIFY',
+        items: [
+          'Royal Mail redirection',
+          'Bank(s) and credit cards',
+          'Employer (Resident Architects) / payroll',
+          'DVLA — driving licence and V5C if you have a car',
+          'GP, dentist, optician',
+          'Electoral roll',
+          'Subscriptions, insurers, pension providers',
+        ],
+      },
+      {
+        id: 'completionday',
+        label: 'On completion day',
+        icon: 'clipboard',
+        tag: 'DAY',
+        items: [
+          "Wait for UKC Legal to confirm funds received by the seller's solicitor — this is legal completion",
+          'Arrange key collection time/location with the estate agent',
+          'Take meter readings the moment you get in — photograph them',
+          'Check the property matches the agreed fixtures/fittings list before unloading',
+          'Change the locks if you want extra peace of mind',
+        ],
+      },
+      {
+        id: 'after',
+        label: 'Just after completion',
+        icon: 'check',
+        tag: 'AFTER',
+        items: [
+          'Send new meter readings to suppliers once accounts are set up',
+          'Set up a standing order/reminder for ground rent and service charge payments',
+          'File the completion statement, TR1 and mortgage deed somewhere safe',
+          'Update your will/life insurance beneficiary details if relevant',
+        ],
+      },
+    ];
 
-const ICONS = {
-scale: '<svg viewBox="0 0 24 24"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/></svg>',
-file: '<svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>',
-truck: '<svg viewBox="0 0 24 24"><path d="M1 6h15v11H1z"/><path d="M16 6h3l3 4v7h-6z"/><circle cx="5.5" cy="19" r="2"/><circle cx="18.5" cy="19" r="2"/></svg>',
-home: '<svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22v-10h6v10"/></svg>',
-boxes: '<svg viewBox="0 0 24 24"><path d="M4 4h6v6H4z"/><path d="M14 4h6v6h-6z"/><path d="M4 14h6v6H4z"/><path d="M14 14h6v6h-6z"/></svg>',
-key: '<svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="5"/><path d="M13 13l8 8M18 3h3v3"/></svg>',
-clipboard: '<svg viewBox="0 0 24 24"><path d="M16 4h-2V3a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v1H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/></svg>',
-check: '<svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>',
-};
+    const ICONS = {
+      scale: '<svg viewBox="0 0 24 24"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/></svg>',
+      file: '<svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>',
+      truck: '<svg viewBox="0 0 24 24"><path d="M1 6h15v11H1z"/><path d="M16 6h3l3 4v7h-6z"/><circle cx="5.5" cy="19" r="2"/><circle cx="18.5" cy="19" r="2"/></svg>',
+      home: '<svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22v-10h6v10"/></svg>',
+      boxes: '<svg viewBox="0 0 24 24"><path d="M4 4h6v6H4z"/><path d="M14 4h6v6h-6z"/><path d="M4 14h6v6H4z"/><path d="M14 14h6v6h-6z"/></svg>',
+      key: '<svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="5"/><path d="M13 13l8 8M18 3h3v3"/></svg>',
+      clipboard: '<svg viewBox="0 0 24 24"><path d="M16 4h-2V3a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v1H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/></svg>',
+      check: '<svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>',
+    };
 
-function showStatus(msg, type = 'info') {
-const statusEl = document.getElementById('status');
-statusEl.textContent = msg;
-statusEl.className = `status ${type}`;
-if (type === 'info') setTimeout(() => { statusEl.textContent = ''; }, 2000);
-}
+    function showStatus(msg, type = 'info') {
+      const statusEl = document.getElementById('status');
+      statusEl.textContent = msg;
+      statusEl.className = `status ${type}`;
+      if (type === 'info') setTimeout(() => { statusEl.textContent = ''; }, 2000);
+    }
 
-function loadFromFirebase() {
-try {
-const checkedRef = ref(db, 'checklist/items');
-onValue(checkedRef, (snapshot) => {
-const data = snapshot.val();
-if (data) {
-checked = data;
-} else {
-checked = {};
-}
-if (isInitialized) {
-render();
-updateProgress();
-} else {
-isInitialized = true;
-render();
-updateProgress();
-updateCountdown();
-updateProgress();
-showStatus('Connected to Firebase', 'success');
-}
-}, (error) => {
-showStatus('Firebase error: ' + error.message, 'error');
-console.error('Firebase error:', error);
-});
-} catch (error) {
-showStatus('Error: ' + error.message, 'error');
-console.error('Error:', error);
-}
-}
+    function loadFromFirebase() {
+      try {
+        const checkedRef = ref(db, 'checklist/items');
+        onValue(checkedRef, (snapshot) => {
+          const data = snapshot.val();
+          if (data) {
+            checked = data;
+          } else {
+            checked = {};
+          }
+          if (isInitialized) {
+            render();
+            updateProgress();
+          } else {
+            isInitialized = true;
+            render();
+            updateProgress();
+            updateCountdown();
+            showStatus('Connected to Firebase', 'success');
+          }
+        }, (error) => {
+          showStatus('Firebase error: ' + error.message, 'error');
+          console.error('Firebase error:', error);
+        });
+      } catch (error) {
+        showStatus('Error: ' + error.message, 'error');
+        console.error('Error:', error);
+      }
+    }
 
-function saveToFirebase(key, value) {
-try {
-set(ref(db, `checklist/items/${key}`), value).catch((error) => {
-showStatus('Save error: ' + error.message, 'error');
-console.error('Save error:', error);
-});
-} catch (error) {
-console.error('Error:', error);
-}
-}
+    function saveToFirebase(key, value) {
+      try {
+        set(ref(db, `checklist/items/${key}`), value).catch((error) => {
+          showStatus('Save error: ' + error.message, 'error');
+          console.error('Save error:', error);
+        });
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    }
 
-function updateCountdown() {
-const now = new Date();
-const ms = COMPLETION_DATE.getTime() - now.getTime();
-const days = Math.max(0, Math.ceil(ms / (1000 * 60 * 60 * 24)));
-document.getElementById('daysLeft').textContent = days;
-const label = days === 1 ? 'DAY TO GO' : 'DAYS TO GO';
-document.querySelector('.countdown-label').textContent = label;
-}
+    function updateCountdown() {
+      const now = new Date();
+      const ms = COMPLETION_DATE.getTime() - now.getTime();
+      const days = Math.max(0, Math.ceil(ms / (1000 * 60 * 60 * 24)));
+      document.getElementById('daysLeft').textContent = days;
+      const label = days === 1 ? 'DAY TO GO' : 'DAYS TO GO';
+      document.querySelector('.countdown-label').textContent = label;
+    }
 
-function updateProgress() {
-const allItems = SECTIONS.reduce((sum, s) => sum + s.items.length, 0);
-const doneItems = Object.values(checked).filter(Boolean).length;
-const pct = allItems ? Math.round((doneItems / allItems) * 100) : 0;
+    function updateProgress() {
+      const allItems = SECTIONS.reduce((sum, s) => sum + s.items.length, 0);
+      const doneItems = Object.values(checked).filter(Boolean).length;
+      const pct = allItems ? Math.round((doneItems / allItems) * 100) : 0;
 
-document.getElementById('progressPercent').textContent = `${doneItems} out of ${allItems} done (${pct}%)`;
-document.getElementById('progressBar').style.width = `${pct}%`;
-}
+      document.getElementById('progressPercent').textContent = `${doneItems} out of ${allItems} done (${pct}%)`;
+    }
 
-function toggleItem(key) {
-checked[key] = !checked[key];
-saveToFirebase(key, checked[key]);
-updateCheckbox(key);
-updateProgress();
-}
+    function toggleItem(key) {
+      checked[key] = !checked[key];
+      saveToFirebase(key, checked[key]);
+      updateCheckbox(key);
+      updateProgress();
+    }
 
-function updateCheckbox(key) {
-const checkbox = document.getElementById(`checkbox-${key}`);
-const item = document.getElementById(`item-${key}`);
-if (checkbox && item) {
-if (checked[key]) {
-checkbox.classList.add('checked');
-item.classList.add('checked');
-} else {
-checkbox.classList.remove('checked');
-item.classList.remove('checked');
-}
-}
-}
+    function updateCheckbox(key) {
+      const checkbox = document.getElementById(`checkbox-${key}`);
+      const item = document.getElementById(`item-${key}`);
+      if (checkbox && item) {
+        if (checked[key]) {
+          checkbox.classList.add('checked');
+          item.classList.add('checked');
+        } else {
+          checkbox.classList.remove('checked');
+          item.classList.remove('checked');
+        }
+      }
+    }
 
-function render() {
-const container = document.getElementById('sectionsContainer');
-container.innerHTML = '';
+    function render() {
+      const container = document.getElementById('sectionsContainer');
+      container.innerHTML = '';
 
-SECTIONS.forEach((section) => {
-const sectionEl = document.createElement('div');
-sectionEl.className = 'section';
+      SECTIONS.forEach((section) => {
+        const sectionEl = document.createElement('div');
+        sectionEl.className = 'section';
 
-const headerEl = document.createElement('div');
-headerEl.className = 'section-header';
+        const headerEl = document.createElement('div');
+        headerEl.className = 'section-header';
 
-const iconEl = document.createElement('div');
-iconEl.className = 'section-icon';
-iconEl.innerHTML = ICONS[section.icon];
+        const iconEl = document.createElement('div');
+        iconEl.className = 'section-icon';
+        iconEl.innerHTML = ICONS[section.icon];
 
-const titleRowEl = document.createElement('div');
-titleRowEl.className = 'section-title-row';
+        const titleRowEl = document.createElement('div');
+        titleRowEl.className = 'section-title-row';
 
-const titleEl = document.createElement('div');
-titleEl.className = 'section-title';
-titleEl.textContent = section.label;
+        const titleEl = document.createElement('div');
+        titleEl.className = 'section-title';
+        titleEl.textContent = section.label;
 
-const tagEl = document.createElement('div');
-tagEl.className = 'section-tag';
-tagEl.textContent = section.tag;
+        const tagEl = document.createElement('div');
+        tagEl.className = 'section-tag';
+        tagEl.textContent = section.tag;
 
-const countEl = document.createElement('div');
-countEl.className = 'section-count';
-const doneCount = section.items.filter((_, i) => checked[`${section.id}-${i}`]).length;
-countEl.textContent = `${doneCount}/${section.items.length}`;
+        const countEl = document.createElement('div');
+        countEl.className = 'section-count';
+        const doneCount = section.items.filter((_, i) => checked[`${section.id}-${i}`]).length;
+        countEl.textContent = `${doneCount}/${section.items.length}`;
 
-titleRowEl.appendChild(titleEl);
-titleRowEl.appendChild(tagEl);
-titleRowEl.appendChild(countEl);
+        titleRowEl.appendChild(titleEl);
+        titleRowEl.appendChild(tagEl);
+        titleRowEl.appendChild(countEl);
 
-headerEl.appendChild(iconEl);
-headerEl.appendChild(titleRowEl);
-sectionEl.appendChild(headerEl);
+        headerEl.appendChild(iconEl);
+        headerEl.appendChild(titleRowEl);
+        sectionEl.appendChild(headerEl);
 
-const itemsEl = document.createElement('div');
-itemsEl.className = 'section-items';
+        const itemsEl = document.createElement('div');
+        itemsEl.className = 'section-items';
 
-section.items.forEach((item, i) => {
-const key = `${section.id}-${i}`;
-const itemWrapperEl = document.createElement('div');
-itemWrapperEl.className = 'item';
-itemWrapperEl.id = `item-${key}`;
-if (checked[key]) itemWrapperEl.classList.add('checked');
+        section.items.forEach((item, i) => {
+          const key = `${section.id}-${i}`;
+          const itemWrapperEl = document.createElement('div');
+          itemWrapperEl.className = 'item';
+          itemWrapperEl.id = `item-${key}`;
+          if (checked[key]) itemWrapperEl.classList.add('checked');
 
-const checkboxEl = document.createElement('div');
-checkboxEl.className = 'item-checkbox';
-checkboxEl.id = `checkbox-${key}`;
-if (checked[key]) checkboxEl.classList.add('checked');
+          const checkboxEl = document.createElement('div');
+          checkboxEl.className = 'item-checkbox';
+          checkboxEl.id = `checkbox-${key}`;
+          if (checked[key]) checkboxEl.classList.add('checked');
 
-const textEl = document.createElement('div');
-textEl.className = 'item-text';
-textEl.textContent = item;
+          const textEl = document.createElement('div');
+          textEl.className = 'item-text';
+          textEl.textContent = item;
 
-itemWrapperEl.appendChild(checkboxEl);
-itemWrapperEl.appendChild(textEl);
+          itemWrapperEl.appendChild(checkboxEl);
+          itemWrapperEl.appendChild(textEl);
 
-itemWrapperEl.addEventListener('click', () => toggleItem(key));
+          itemWrapperEl.addEventListener('click', () => toggleItem(key));
 
-itemsEl.appendChild(itemWrapperEl);
-});
+          itemsEl.appendChild(itemWrapperEl);
+        });
 
-sectionEl.appendChild(itemsEl);
-container.appendChild(sectionEl);
-});
+        sectionEl.appendChild(itemsEl);
+        container.appendChild(sectionEl);
+      });
 
-updateProgress();
-}
+      updateProgress();
+    }
 
-// Initialize
-loadFromFirebase();
-setInterval(updateCountdown, 60000);
-</script>
+    // Initialize
+    loadFromFirebase();
+    setInterval(updateCountdown, 60000);
+  </script>
 </body>
 </html>
