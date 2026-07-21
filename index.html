@@ -291,9 +291,7 @@ padding: 1.5rem;
 <div class="countdown-label">DAYS TO GO</div>
 <div class="progress-section">
 <div class="progress-labels">
-              <span id="progressText">0 of 0 done</span>
-              <span id="progressText">0 of 0 done </span>
-<span id="progressPercent"> 0%</span>
+              <span id="progressText">0 of 0 done (0%)</span>
 </div>
 <div class="progress-bar-bg">
 <div class="progress-bar-fill" id="progressBar" style="width: 0%"></div>
@@ -517,10 +515,7 @@ const allItems = SECTIONS.reduce((sum, s) => sum + s.items.length, 0);
 const doneItems = Object.values(checked).filter(Boolean).length;
 const pct = allItems ? Math.round((doneItems / allItems) * 100) : 0;
 
-document.getElementById('progressText').textContent = `${doneItems} of ${allItems} done`;
-      document.getElementById('progressPercent').textContent = ` ${pct}%`;
-      document.getElementById('progressPercent').textContent = ` (${pct}%)`;
-document.getElementById('progressBar').style.width = `${pct}%`;
+document.getElementById('progressPercent').textContent = `${doneItems} out of ${allItems} done (${pct}%)`;
 }
 
 function toggleItem(key) {
