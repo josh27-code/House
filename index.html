@@ -478,6 +478,7 @@ isInitialized = true;
 render();
 updateProgress();
 updateCountdown();
+updateProgress();
 showStatus('Connected to Firebase', 'success');
 }
 }, (error) => {
@@ -516,6 +517,7 @@ const doneItems = Object.values(checked).filter(Boolean).length;
 const pct = allItems ? Math.round((doneItems / allItems) * 100) : 0;
 
 document.getElementById('progressPercent').textContent = `${doneItems} out of ${allItems} done (${pct}%)`;
+document.getElementById('progressBar').style.width = `${pct}%`;
 }
 
 function toggleItem(key) {
