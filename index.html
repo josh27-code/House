@@ -328,7 +328,9 @@
     };
 
     // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+    if (!firebase.apps.length) {
+      firebase.initializeApp(firebaseConfig);
+    }
     const db = firebase.database();
 
     const COMPLETION_DATE = new Date('2026-07-27T00:00:00+01:00');
