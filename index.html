@@ -309,14 +309,11 @@
 
   <div class="footer">SYNCING WITH FIREBASE</div>
 
-  <!-- Firebase SDK -->
-  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js"></script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+    import { getDatabase, ref, onValue, set } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
 
-  <script>
-    // ========================================
-    // FIREBASE CONFIG
-    // ========================================
+    // Firebase config
     const firebaseConfig = {
       apiKey: "AIzaSyCeA_vGys9NnEARsFj2r7nLtOVTQXEGkZ8",
       authDomain: "house-moving-checklist.firebaseapp.com",
@@ -328,10 +325,8 @@
     };
 
     // Initialize Firebase
-    if (!firebase.apps.length) {
-      firebase.initializeApp(firebaseConfig);
-    }
-    const db = firebase.database();
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
 
     const COMPLETION_DATE = new Date('2026-07-27T00:00:00+01:00');
     let checked = {};
@@ -467,34 +462,44 @@
     }
 
     function loadFromFirebase() {
-      const checkedRef = db.ref('checklist/items');
-      checkedRef.on('value', (snapshot) => {
-        const data = snapshot.val();
-        if (data) {
-          checked = data;
-        } else {
-          checked = {};
-        }
-        if (isInitialized) {
-          render();
-          updateProgress();
-          updateCountdown();
-        } else {
-          isInitialized = true;
-          render();
-          updateProgress();
-          updateCountdown();
-          showStatus('Connected to Firebase', 'success');
-        }
-      }, (error) => {
-        showStatus('Firebase error: ' + error.message, 'error');
-      });
+      try {
+        const checkedRef = ref(db, 'checklist/items');
+        onValue(checkedRef, (snapshot) => {
+          const data = snapshot.val();
+          if (data) {
+            checked = data;
+          } else {
+            checked = {};
+          }
+          if (isInitialized) {
+            render();
+            updateProgress();
+          } else {
+            isInitialized = true;
+            render();
+            updateProgress();
+            updateCountdown();
+            showStatus('Connected to Firebase', 'success');
+          }
+        }, (error) => {
+          showStatus('Firebase error: ' + error.message, 'error');
+          console.error('Firebase error:', error);
+        });
+      } catch (error) {
+        showStatus('Error: ' + error.message, 'error');
+        console.error('Error:', error);
+      }
     }
 
     function saveToFirebase(key, value) {
-      db.ref(`checklist/items/${key}`).set(value).catch((error) => {
-        showStatus('Save error: ' + error.message, 'error');
-      });
+      try {
+        set(ref(db, `checklist/items/${key}`), value).catch((error) => {
+          showStatus('Save error: ' + error.message, 'error');
+          console.error('Save error:', error);
+        });
+      } catch (error) {
+        console.error('Error:', error);
+      }
     }
 
     function updateCountdown() {
@@ -612,7 +617,7 @@
 
     // Initialize
     loadFromFirebase();
-    setInterval(updateCountdown, 60000); // Update countdown every minute
+    setInterval(updateCountdown, 60000);
   </script>
 </body>
 </html>
