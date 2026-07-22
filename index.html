@@ -516,6 +516,7 @@
       const pct = allItems ? Math.round((doneItems / allItems) * 100) : 0;
 
       document.getElementById('progressPercent').textContent = `${doneItems} out of ${allItems} done (${pct}%)`;
+      document.getElementById('progressBar').style.width = `${pct}%`;
     }
 
     function toggleItem(key) {
